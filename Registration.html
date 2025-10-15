@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Course Registration</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Register for Courses</h1>
+    <nav>
+      <a href="Home.html">Home</a>
+      <a href="Courses.html">Courses</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <h2>Registration Form</h2>
+      <form id="registrationForm">
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label>Select Your Courses:</label>
+        <div class="dropdown-checkbox">
+          <button type="button" class="dropbtn">Select Courses</button>
+          <div class="dropdown-content">
+            <label><input type="checkbox" value="Sewing" data-type="long"> Sewing</label>
+            <label><input type="checkbox" value="First Aid" data-type="long"> First Aid</label>
+            <label><input type="checkbox" value="Landscaping" data-type="long"> Landscaping</label>
+            <label><input type="checkbox" value="Life Skills" data-type="long"> Life Skills</label>
+
+            <label><input type="checkbox" value="Course E" data-type="short"> Course E</label>
+            <label><input type="checkbox" value="Course F" data-type="short"> Course F</label>
+            <label><input type="checkbox" value="Course G" data-type="short"> Course G</label>
+            <label><input type="checkbox" value="Course H" data-type="short"> Course H</label>
+          </div>
+        </div>
+
+        <p id="totalFee">Total Fee: R0.00</p>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Course Website</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
